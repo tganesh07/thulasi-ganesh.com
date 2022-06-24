@@ -19,7 +19,7 @@ const NavBar = () => {
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div className="collapse navbar-collapse d-flex  flex-row-reverse" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
                         <NavLink className="nav-link" to="/blog">
                             Blog
