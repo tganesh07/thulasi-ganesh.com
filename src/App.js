@@ -7,9 +7,9 @@ import NotFound from "./page/NotFound";
 
 function App() {
     return (
-        <div className="container">
-            <Router>
-                <NavBar />
+        <Router>
+            <NavBar />
+            <div className="container">
                 <Routes>
                     <Route path="/" exact element={<Home />} />
                     <Route path="/about" element={<AboutMe />} />
@@ -17,8 +17,8 @@ function App() {
                     <Route path="/not-found" element={<NotFound />} />
                     <Route path="*" element={<Navigate to="not-found" />} />
                 </Routes>
-            </Router>
-        </div>
+            </div>
+        </Router>
     );
 }
 
