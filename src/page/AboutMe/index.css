@@ -1,0 +1,16 @@
+
+
+.about--author::before{
+    content: '-->';
+}
+
+.about--author{
+    text-align: right;
+}
+
+@media screen and (min-width: 1024px) {
+    .about--author{
+        float:calc(max(width)-10px);
+    }
+    
+}

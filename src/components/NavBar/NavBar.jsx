@@ -1,5 +1,4 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Avatar from "../../images/avatar.png";
 
 const NavBar = () => {
@@ -10,7 +9,7 @@ const NavBar = () => {
                     <img src={Avatar} alt="" style={{ width: 50, height: 50, borderRadius: 50 }} />
                 </Link>
 
-                <button
+                {/* <button
                     className="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
@@ -34,7 +33,7 @@ const NavBar = () => {
                             </NavLink>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </nav>
     );
