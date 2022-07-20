@@ -3,9 +3,9 @@ import "./index.css";
 
 const AboutMe = () => {
     return (
-        <article>
-            <h3>Do you recognize me?</h3>
-            <h4>if not you have come to the right place.</h4>
+        <article className="about">
+            <h3>Do you know me?</h3>
+            <h4 className="about--caption">if not you have come to the right place.</h4>
             <br />
             <p>Hi!</p>
             <p>I am just like you!</p>
