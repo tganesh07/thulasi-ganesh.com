@@ -6,6 +6,7 @@
     --color-body: #918ca4;
     --color-border: #ccc;
     --border-radius: 30px;
+    --color-box-shadow: #f3f3f3;
 }
 
 *,
@@ -78,16 +79,17 @@ p {
 }
 
 /* About Me */
-.card {
+.about{
     border-radius: 7px;
-    box-shadow: 0 0 20px 10px #f3f3f3;
+    box-shadow: 0 0 20px 10px var(--color-box-shadow);
     overflow: hidden;
+    padding: 3rem;
 }
 
 .brand {
+    color: #5c5577;
     font-size: 3rem;
     font-style: italic;
-    color: #5c5577;
 }
 
 .brand__text::after {
@@ -103,7 +105,7 @@ p {
     padding: 25px 0;
 }
 
-/* Media Objects*/
+/* Author Signature*/
 .signature {
     display: flex;
     padding-top: 25px;
@@ -119,4 +121,12 @@ p {
 
 .signature__image {
     margin-top: -1rem;
+}
+
+@media screen and (max-width: 470px) {
+    .brand__author {
+        font-style: normal;
+        padding: 0;
+
+    }
 }
