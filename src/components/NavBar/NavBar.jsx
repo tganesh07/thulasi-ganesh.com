@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Avatar from "../../images/avatar.png";
+import Avatar from "../../images/navbar_logo.png";
 
 const NavBar = () => {
     return (

@@ -1,20 +1,28 @@
 import React from "react";
-import "./index.css";
+import Avatar from "../../images/avatar.png";
 
 const AboutMe = () => {
     return (
         <article className="about">
-            <h3>Do you know me?</h3>
-            <h4 className="about--caption">if not you have come to the right place.</h4>
-            <br />
-            <p>Hi!</p>
-            <p>I am just like you!</p>
-            <p>
-                Interested in a few things and Software Development is one among the few and here I share things(Best
-                Practices, Tricks, Shortcuts, etc.) that I have learned, practised and enjoyed during my professional
-                and personal projects.
-            </p>
-            <p className="about--author"> Thulasi Ganesh</p>
+            <blockquote className="brand">
+                <p>Hi!</p>
+                <p>I am just like you.</p>
+                <p className="brand__text">
+                    Interested in a few things and Software Development is one among the few and here I share
+                    things(Best Practices, Tricks, Shortcuts, etc.) that I have learned, practised and enjoyed during my
+                    professional and personal projects.
+                </p>
+                <footer>
+                    <div className="signature">
+                        <div className="signature__image">
+                            <img src={Avatar} alt="" style={{ width: 100, height: 100, borderRadius: 50 }} />
+                        </div>
+                        <div className="signature__body">
+                            <h3 className="signature__title brand__author">Thulasi Ganesh</h3>
+                        </div>
+                    </div>
+                </footer>
+            </blockquote>
         </article>
     );
 };

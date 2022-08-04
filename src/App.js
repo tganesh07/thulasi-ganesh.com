@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import AboutMe from "./page/AboutMe";
+import AboutMe from "./page/aboutme";
 import NotFound from "./page/NotFound";
-import "./App.css";
+import "./styles/styles.css";
 
 function App() {
     return (
