@@ -7,17 +7,19 @@ import "./styles/styles.css";
 
 function App() {
     return (
-        <Router>
-            <NavBar />
-            <div className="content">
-                <Routes>
-                    <Route path="/" exact element={<AboutMe />} />
-                    <Route path="/blog" element={<Blogs />} />
-                    <Route path="/not-found" element={<NotFound />} />
-                    <Route path="*" element={<Navigate to="not-found" />} />
-                </Routes>
-            </div>
-        </Router>
+        <div class="container">
+            <Router>
+                <NavBar />
+                <div className="content">
+                    <Routes>
+                        <Route path="/" exact element={<AboutMe />} />
+                        <Route path="/blog" element={<Blogs />} />
+                        <Route path="/not-found" element={<NotFound />} />
+                        <Route path="*" element={<Navigate to="not-found" />} />
+                    </Routes>
+                </div>
+            </Router>
+        </div>
     );
 }
 
