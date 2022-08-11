@@ -7,7 +7,8 @@ import "./styles/styles.css";
 
 function App() {
     return (
-        <div class="container">
+        //TODO: remove bootstrap class
+        <div className="container">
             <Router>
                 <NavBar />
                 <div className="content">
