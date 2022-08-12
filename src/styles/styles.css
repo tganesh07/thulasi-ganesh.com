@@ -130,3 +130,25 @@ p {
 
     }
 }
+
+/* Blog */
+.blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    margin-top: 2rem;
+}
+
+.blog__item {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px var(--color-box-shadow);
+    overflow: hidden;
+    padding: 3rem;
+    height: 15rem;
+}
+
+.blog__item:hover{
+    cursor: pointer;
+    transform: scale3d(1.05, 1.05, 1);
+    transition: all 0.3s ease-in-out;
+}
