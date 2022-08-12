@@ -1,29 +1,19 @@
-import React, { useState, useEffect } from "react";
-import Markdown from "markdown-to-jsx";
-
-const Blog = ({ fileName }) => {
-    const [post, setPost] = useState("");
-
-    useEffect(() => {
-        import(`./markdown/${fileName}`).then((res) => {
-            fetch(res.default)
-                .then((res) => res.text())
-                .then((res) => setPost(res))
-                .catch((err) => console.log(err));
-        });
-    });
-    return <Markdown>{post}</Markdown>;
-};
+import { useState, useEffect } from "react";
 
 const Blogs = () => {
-    const [posts, setPosts] = useState([
-        {
-            fileName: "Top5VSCodeExtensions.md",
-            title: "Top 5 VS Code extensions for Web Development",
-            desc: "It is the year 2022 and Microsoft's Visual Studio Code is the best IDE for Web Developers.",
-        },
-        { fileName: 2, title: "React Js shortcuts", desc: "React js is simply beautiful" },
-    ]);
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        //TODO: fetch json file or parse all markdown files to prepare this obj array
+        setPosts([
+            {
+                fileName: "Top5VSCodeExtensions.md",
+                title: "Top 5 VS Code extensions for Web Development",
+                desc: "It is the year 2022 and Microsoft's Visual Studio Code is the best IDE for Web Developers.",
+            },
+            { fileName: 2, title: "React Js shortcuts", desc: "React js is simply beautiful" },
+        ]);
+    }, []);
 
     return (
         <div className="blog">
