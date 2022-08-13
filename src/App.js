@@ -16,7 +16,11 @@ function App() {
                     <Routes>
                         <Route path="/" exact element={<AboutMe />} />
                         <Route path="/blog" element={<Blogs />} />
-                        <Route path="/blog/:id" element={<BlogViewer />} />
+                        <Route
+                            path="/blog/Top-5-VSCode-Extensions-for-web-development"
+                            element={<BlogViewer fileName="Top-5-VSCode-Extensions-for-web-development" />}
+                        />
+                        {/* <Route path="/blog/:id" element={<BlogViewer />} /> */}
                         <Route path="/not-found" element={<NotFound />} />
                         <Route path="*" element={<Navigate to="not-found" />} />
                     </Routes>
