@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-d
 import NavBar from "./components/NavBar/NavBar";
 import AboutMe from "./page/about-me";
 import NotFound from "./page/NotFound";
-import Blogs from "./page/blogs";
+import Blogs from "./page/blog";
 import BlogViewer from "./page/blogs/viewer";
 import "./styles/styles.css";
 
