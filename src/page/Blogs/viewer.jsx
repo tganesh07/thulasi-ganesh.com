@@ -1,17 +1,22 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Markdown from "markdown-to-jsx";
 
-const BlogViewer = ({ fileName }) => {
+const BlogViewer = () => {
     const [post, setPost] = useState("");
+    const { id } = useParams();
 
     useEffect(() => {
-        import(`./markdown/${fileName}.md`).then((res) => {
-            fetch(res.default)
-                .then((res) => res.text())
-                .then((res) => setPost(res))
-                .catch((err) => console.log(`logged - ${err}`));
-        });
-    });
+        if (id) {
+            import(`./markdown/${id}.md`).then((res) => {
+                fetch(res.default)
+                    .then((res) => res.text())
+                    .then((res) => setPost(res))
+                    .catch((err) => console.log(`logged - ${err}`));
+            });
+        }
+    }, [id]);
+
     return <Markdown>{post}</Markdown>;
 };
 
