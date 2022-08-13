@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar/NavBar";
 import AboutMe from "./page/about-me";
 import NotFound from "./page/NotFound";
 import Blogs from "./page/blog";
-import BlogViewer from "./page/blogs/viewer";
+import BlogViewer from "./page/blog/viewer";
 import "./styles/styles.css";
 
 function App() {
