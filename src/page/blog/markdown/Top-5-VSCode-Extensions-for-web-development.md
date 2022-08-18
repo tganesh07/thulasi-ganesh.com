@@ -22,9 +22,9 @@ One of the most important feature of an IDE is to display relevant information a
 
 &nbsp;
 ## [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
-As the name suggests, it lets you take a peek into the CSS class contents from the HTML file itself. All you have to do is just press cntrl and hover over the CSS class name and ta-da you'll see a small pop-up with the full content of that class.
+As the name suggests, it lets you take a peek into the CSS class contents from the HTML file itself. All you have to do is just press ctrl and hover over the CSS class name and ta-da you'll see a small pop-up with the full content of that class.
 
-Not only take a peek but also takes you for a fun trip to the CSS file when you cntrl click the class and then you can add/modify/delete properties that you want and don't forget to hit the save button, if you want to see the changes.
+Not only take a peek but also takes you for a fun trip to the CSS file when you ctrl click the class and then you can add/modify/delete properties that you want and don't forget to hit the save button, if you want to see the changes.
 
 &nbsp;
 ## [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)

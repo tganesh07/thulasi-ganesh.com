@@ -43,11 +43,16 @@ h2 {
 }
 
 h3 {
+    font-size: 2rem;
+}
+
+h4 {
     font-size: 1.8rem;
 }
 
 p {
     margin-top: 0;
+    font-size: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -126,7 +131,7 @@ p {
 @media screen and (max-width: 470px) {
     .brand__author {
         font-style: normal;
-        padding: 0;
+        padding-top: 10;
 
     }
 }
@@ -147,8 +152,18 @@ p {
     height: 15rem;
 }
 
+.blog__item p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .blog__item:hover{
     cursor: pointer;
     transform: scale3d(1.05, 1.05, 1);
     transition: all 0.3s ease-in-out;
+}
+
+.viewer{
+    margin: 25px;
 }

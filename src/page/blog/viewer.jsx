@@ -17,7 +17,11 @@ const BlogViewer = () => {
         }
     }, [id]);
 
-    return <Markdown>{post}</Markdown>;
+    return (
+        <div className="viewer">
+            <Markdown>{post}</Markdown>
+        </div>
+    );
 };
 
 export default BlogViewer;
